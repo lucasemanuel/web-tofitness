@@ -1,17 +1,21 @@
 /* Main style */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
 
 /* RESET */
 
-*, :after, :before {
+*, :before, :after {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
     list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+    
 }
 
 /* GERAL */
@@ -31,45 +35,130 @@
 /* HEADER */
 
 .header {
-    background-color: blue;
+    background-color: #070d59;   
+    /* background-image: url("https://www.transparenttextures.com/patterns/always-grey.png"); */
+    /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"); */
+    background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png"); */
+    /* height: 540px; */
 }
 
 .header .nav-top {
-    background-color: rgb(0, 0, 201);   
+    padding: .6rem;
+    background-color: #1f3d88a0;
+    font-size: .8rem;
+    color: #fff;
 }
 
 .header .nav-top ul li {
     display: inline-block;
     text-align: center;
-    /* float: right; */
+}
+
+.header .nav-top ul li a{
+    color: #fff;
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+}
+
+.header .nav-top ul li a:hover{
+    color: #070d59;
 }
 
 .header .nav-top ul li:not(:first-child) {
     float: right;
+    margin-left: 1rem;
+}
+
+.header .nav-top .fa-phone {
+    font-size: .6rem;
+    margin-right: .6rem;
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.header .nav-top .phone {
+    font-weight: bolder;
+}
+
+.header .logo {
+    margin-top: 2rem;
 }
 
 .header .logo img {
-    max-width: 6rem;
+    max-width: 8rem;
 }
 
 .header .logo h1 {
+    margin-top: .2rem;
     text-align: center;
-    font-weight: unset;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1rem;
+    color: #fff;
     text-transform: uppercase;
+}
+
+.header .logo h1 span {
+    color: #FF6F00;
+}
+
+.header .motivacional {
+    margin-top: 1rem;
 }
 
 .header .motivacional-text {
     max-width: calc(768px - 10%);
+    margin-bottom: 2rem;
+    color: #fff;
 }
 
-.header .motivacional img {
+.header .motivacional-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.header .motivacional-img {
+    position: relative;
+    margin-bottom: -6%;
     max-width: calc(768px - 10%);
-    width: 100%;
-    height: auto;
 }
 
-.header .trade-partner {
-    background-color: aquamarine;
+.header .motivacional-img img {
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
+
+/* TRADE-PARTNER */
+
+.trade-partner {
+    background-color: #fff;
+    height: 12rem;
+}
+
+.trade-partner h1 {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+.trade-partner ul li {
+    display: inline-block;
+    padding: .4rem;
+}
+
+.trade-partner ul li img {
+    content: url(https://lh3.googleusercontent.com/YPDYxoKsL2jJ5Wbg9opxvxIDJ5mtmPdZAiEOFtD4POwqrpa1frt9gGr7KBKX0K90WiDhcU_3GGDJCZZtVM_EG6FzJgsKPAQ0jRWKz8QjI37haUCBGQR9OO0b7sBEaYm2QXiLEiC2OQmZ4M21x0wkoNWoIPCOVp1sh5xj-dC8WBDkBxPYrj-5ChgN6mUurRDXR7I9N0q2ybs4xyzcrO4JyrN99BmESnis_hhkahxgny8lmOuJW3eswnmoWENLSucUp5zzQaZ-XmG1lVnc8JC3K3hk6xzQGYU4ju1tCfZ-xUzAglbHjDEGQRPQRri-ymbnjB9K73A4HIAMATUGjnAAR0XMqsdjLtUllw1hmpSOJXC5YpsuxOJ_LXhnZMrXZYqAkFlc1P6B2F8zcpqDkyks5BmKGLQR6tlTIlgJ-o46OyeSq6jPyr1qgUpQQ1j5vbXX-gGp0549YJcq5qlZ1occpJq9XzI-5X_aKVB4zv6LZkzJBS0fErsJT2CAkckqi11_ZBsY6WvwujXr02jRh2bHToTm9u4zJR_H0Z4kFKPPaw1EZ7GFIrt-YtA0vTvC0HncnMYE9QbhezY7sr0GynK4ig_eb1iUzHjOhLnJglHhdDD3iz_YIjdOMtgLfMo2n-Os_kenmABBristjvLG-9jmyFy5ylSZFmZVM6CQ9qCW04oe7twn6I6rehfLWxF53VY9hJJZdS0JuBaSiPz4BA=w569-h537-no);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    max-width: 2rem;
+}
+
+/* MAIN */
+
+/* MEDIAS QUERIES */
