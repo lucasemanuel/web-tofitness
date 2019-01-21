@@ -1,6 +1,6 @@
 /* Main style */
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald');
 
 /* RESET */
 
@@ -120,6 +120,9 @@
     position: relative;
     margin-bottom: -6%;
     max-width: calc(768px - 10%);
+    -webkit-box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
 }
 
 .header .motivacional-img img {
@@ -158,4 +161,66 @@
 
 /* MAIN */
 
+main .how-work {
+    /* background: linear-gradient(#070c5960,  #070d59), url('https://farm8.staticflickr.com/7910/31887922117_8d90739fbd_o.jpg'); */
+    background: linear-gradient(#070c5960,  #070d59), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
+    /* background-image: linear-gradient(#070c5921, #070c5934); */
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+}
+
+main .how-work h1 {
+    /* height: 6rem; */
+    padding: 0 1rem;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    border-left: .6rem solid #FF6F00;
+
+}
+
+main .how-work p {
+    margin-top: 1.2rem;
+    font-size: .9rem;
+    font-weight: 300;
+}
+
 /* MEDIAS QUERIES */
+
+@media (max-width: 767.9px) {
+    
+    main .how-work {
+        padding: 10% 0;
+    }
+
+}
+
+@media (max-width: 479.9px) {
+
+    .header .motivacional-img {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    main .how-work h1 {
+        font-size: 2rem;
+    }    
+    
+}
+
+@media (min-width: 768px) {
+
+    main .how-work {
+        height: 24rem;
+    }
+
+    main .how-work .content {
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
+
+}
