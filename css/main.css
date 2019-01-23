@@ -32,7 +32,6 @@
     color: #FF6F00;
 }
 
-
 /* HEADER */
 
 .header {
@@ -42,12 +41,19 @@
     background-image: url('https://www.transparenttextures.com/patterns/shattered.png');
     /* background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png"); */
     /* height: 540px; */
+    background-position: top;
     background-attachment: fixed;
 }
 
 .header .header-nav {
-    padding: .6rem;
-    background-color: #1f3d88a0;
+    position: fixed;
+    /* overflow: auto; */
+    /* top: 0; */
+    width: 100%;
+    margin: 0;
+    padding: .6rem 0;
+    z-index: 10;
+    background-color: #1f3d88f0;
     font-size: .8rem;
     color: #fff;
 }
@@ -84,7 +90,7 @@
 }
 
 .header .logo {
-    margin-top: 2rem;
+    padding-top: 4.2rem;
 }
 
 .header .logo img {
