@@ -121,9 +121,9 @@
     position: relative;
     margin-bottom: -6%;
     max-width: calc(768px - 10%);
-    -webkit-box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
+    /* -webkit-box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 16px 8px -8px rgba(0, 0, 0, 0.5); */
 }
 
 .header .motivacional-img img {
@@ -200,38 +200,20 @@
     border-right: .6rem solid #070d59;
 }
 
-.how-much .content {
-    display: flex;
-    align-items: center;
-}
-
 .how-much .price {
-    position: relative;
-    width: 22%;
-}
-
-.price:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-}
-
-.how-much .price-content {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    padding: 4%;
-    position:  absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    background-color: #070d59;
+    background: linear-gradient(#1f3c88f0, #070d59f0);
     text-align: center;
+    -webkit-transition: .3s all ease-in-out;
+    -moz-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
 }
+
+.how-much .price:hover {
+    color:#FF6F00;
+    background: #fffffff0;
+    border: rgba(0, 0, 0, 0.24) solid .4rem;
+}
+
 
 .how-much .price-text {
     width: 100%;
@@ -240,7 +222,7 @@
 }
 
 .how-much .price-text p:first-child {
-    margin-bottom: -.8rem;
+    margin-bottom: -1rem;
     letter-spacing: .4rem;
     font-weight: bold;
     font-family: inherit;
@@ -252,19 +234,43 @@
 }
 
 .how-much .price-text h2 {
-    margin-bottom: -2%;
-    font-size: 400%;
+    margin-bottom: -.6rem;
+    font-size: 5rem;
     font-family: inherit;
 }
 
-
 .how-much .content-texts {
-    width: 76%;
-    margin-right: 2%;
     text-align: right;
 }
 
 /* MEDIAS QUERIES */
+
+@media (max-width: 959.9px) {
+    
+    .how-much .price-text p:last-child {
+        font-size: .7rem;
+    }
+    
+    .how-much .price-text h2 {
+        font-size: 4.2rem;
+    }
+    
+}
+
+@media (max-width: 819.9px) {
+
+    .how-much .price-text p:first-child {
+        font-size: .9rem;
+    }
+
+    .how-much .price-text p:last-child {
+        font-size: .6rem;
+    }
+    
+    .how-much .price-text h2 {
+        font-size: 3.8rem;
+    }
+}
 
 @media (max-width: 767.9px) {
     
@@ -272,24 +278,39 @@
         padding: 10% 0;
     }
 
+    .how-work h1, .how-much .content-texts h1 {
+        font-size: 3rem;
+    }
+    
+    .content-texts {
+        margin-bottom: 1.4rem;
+    }
+
+    .price {
+        margin: auto 30%;
+        padding: 1rem;    
+        -webkit-box-border-radius: 1rem;
+        -moz-box-border-radius: 1rem;
+        border-radius: 1rem;
+    }
 }
 
 @media (max-width: 479.9px) {
-
+/* 
     .header .motivacional-img {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
-    }
+    } */
 
     .how-work h1, .how-much .content-texts h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }    
 
-    .how-much h1 {
-        text-align: right;
+    .price-content {
+        margin: auto 12%;   
+        padding: .8rem;    
     }
-
 }
 
 @media (min-width: 768px) {
@@ -298,15 +319,40 @@
         height: 24rem;
     }
 
-    .how-work, .how-much {
+    .how-work, .how-much .content{
         height: 100%;
         display: flex;
-        align-items: center
+        align-items: center;
     }
 
-}
+    .how-much .price {
+        position: relative;
+        width: 22%;
+    }
 
-@media (min-width: 900px) {
+    .how-much .price:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
 
+    .how-much .price-content {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        -webkit-box-border-radius: 50%;
+        -moz-box-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .how-much .content-texts {
+        width: 76%;
+        margin-right: 2%;
+    }
 
 }
