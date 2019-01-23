@@ -42,6 +42,7 @@
     background-image: url('https://www.transparenttextures.com/patterns/shattered.png');
     /* background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png"); */
     /* height: 540px; */
+    background-attachment: fixed;
 }
 
 .header .header-nav {
@@ -159,39 +160,115 @@
     max-width: 2rem;
 }
 
-/* MAIN */
+/* HOW-WORK */
 
-main .how-work {
-    /* background: linear-gradient(#070c5960,  #070d59), url('https://farm8.staticflickr.com/7910/31887922117_8d90739fbd_o.jpg'); */
-    background: linear-gradient(#070c5960,  #070d59), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
-    /* background-image: linear-gradient(#070c5921, #070c5934); */
-    background-attachment: fixed;
+.how-work {
+    background: linear-gradient(#1f3c88d0,  #1f3c88d0), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
     background-position: top;
     background-size: cover;
     color: #fff;
 }
 
-main .how-work h1 {
-    /* height: 6rem; */
+.how-work h1 {
+    border-left: .6rem solid #FF6F00;
+}
+
+.how-work h1, .how-much .content-texts h1 {
+    /* height: 6rem; */ 
     padding: 0 1rem;
     font-size: 3.4rem;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    border-left: .6rem solid #FF6F00;
-
 }
 
-main .how-work p {
+.how-work p, .how-much .content-texts p {
     margin-top: 1.2rem;
     font-size: .9rem;
     font-weight: 300;
+}
+
+/* HOW-MUCH */
+
+.how-much {
+    background: linear-gradient(#FF6F00b0,  #FF6F00b0), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
+    background-position: center ;
+    background-size: cover;
+    color: #fff;
+}
+
+.how-much h1 {
+    border-right: .6rem solid #070d59;
+}
+
+.how-much .content {
+    display: flex;
+    align-items: center;
+}
+
+.how-much .price {
+    position: relative;
+    width: 22%;
+}
+
+.price:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.how-much .price-content {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    padding: 4%;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #070d59;
+    text-align: center;
+}
+
+.how-much .price-text {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+.how-much .price-text p:first-child {
+    margin-bottom: -.8rem;
+    letter-spacing: .4rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.how-much .price-text p:last-child {
+    font-size: .8rem;
+    font-family: inherit;
+}
+
+.how-much .price-text h2 {
+    margin-bottom: -2%;
+    font-size: 400%;
+    font-family: inherit;
+}
+
+
+.how-much .content-texts {
+    width: 76%;
+    margin-right: 2%;
+    text-align: right;
 }
 
 /* MEDIAS QUERIES */
 
 @media (max-width: 767.9px) {
     
-    main .how-work {
+    .how-work, .how-much {
         padding: 10% 0;
     }
 
@@ -205,22 +282,31 @@ main .how-work p {
         box-shadow: none;
     }
 
-    main .how-work h1 {
+    .how-work h1, .how-much .content-texts h1 {
         font-size: 2rem;
     }    
-    
+
+    .how-much h1 {
+        text-align: right;
+    }
+
 }
 
 @media (min-width: 768px) {
 
-    main .how-work {
+    main section:not(.subscribe) {
         height: 24rem;
     }
 
-    main .how-work .content {
+    .how-work, .how-much {
         height: 100%;
         display: flex;
         align-items: center
     }
+
+}
+
+@media (min-width: 900px) {
+
 
 }
