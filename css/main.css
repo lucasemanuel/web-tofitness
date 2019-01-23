@@ -203,15 +203,15 @@
 .how-much .price {
     background: linear-gradient(#1f3c88f0, #070d59f0);
     text-align: center;
-    -webkit-transition: .3s all ease-in-out;
-    -moz-transition: .3s all ease-in-out;
-    transition: .3s all ease-in-out;
+    -webkit-transition: .6s all ease-out;
+    -moz-transition: .6s all ease-out;
+    transition: .6s all ease-out;
 }
 
 .how-much .price:hover {
     color:#FF6F00;
     background: #fffffff0;
-    border: rgba(0, 0, 0, 0.24) solid .4rem;
+    border: rgba(0, 0, 0, 0.1) solid .4rem;
 }
 
 
@@ -307,7 +307,7 @@
         font-size: 2.4rem;
     }    
 
-    .price-content {
+    .price{
         margin: auto 12%;   
         padding: .8rem;    
     }
@@ -336,6 +336,12 @@
         padding-top: 100%;
     }
 
+    .price {
+        -webkit-box-border-radius: 50%;
+        -moz-box-border-radius: 50%;
+        border-radius: 50%;
+    }
+
     .how-much .price-content {
         display: flex;
         align-items: center;
@@ -345,9 +351,6 @@
         left: 0;
         bottom: 0;
         right: 0;
-        -webkit-box-border-radius: 50%;
-        -moz-box-border-radius: 50%;
-        border-radius: 50%;
     }
 
     .how-much .content-texts {
