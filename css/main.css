@@ -53,9 +53,9 @@
     margin: 0;
     padding: .6rem 0;
     z-index: 10;
-    background-color: #1f3d88f0;
+    background-color: rgba(31, 61, 136, .92);
     font-size: .8rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 .header .header-nav .nav-logo {
@@ -75,7 +75,7 @@
 }
 
 .header .header-nav ul li a {
-    color: #fff;
+    color: #ffffff;
     -webkit-transition: .3s all ease-in-out;
     -moz-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
@@ -169,9 +169,9 @@
 /* HOW-WORK */
 
 .how-work {
-    background: -webkit-linear-gradient(#1f3c88d0,  #1f3c88d0), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
-    background: -moz-linear-gradient(#1f3c88d0,  #1f3c88d0), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
-    background: linear-gradient(#1f3c88d0,  #1f3c88d0), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');    
+    background: -webkit-linear-gradient(rgba(31, 60, 136, .8),  rgba(31, 60, 136, .8)), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
+    background: -moz-linear-gradient(rgba(31, 60, 136, .8),  rgba(31, 60, 136, .8)), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');
+    background: linear-gradient(rgba(31, 60, 136, .8),  rgba(31, 60, 136, .8)), url('https://farm8.staticflickr.com/7897/46104203994_619c80e3cf_o.jpg');    
     background-position: top;
     background-size: cover;
     color: #fff;
@@ -198,9 +198,9 @@
 /* HOW-MUCH */
 
 .how-much {
-    background: -webkit-linear-gradient(#FF6F00b0,  #FF6F00b0), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
-    background: -moz-linear-gradient(#FF6F00b0,  #FF6F00b0), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
-    background: linear-gradient(#FF6F00b0,  #FF6F00b0), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
+    background: -webkit-linear-gradient(rgba(255, 111, 0, .7),  rgba(255, 111, 0, .7)), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
+    background: -moz-linear-gradient(rgba(255, 111, 0, .7),  rgba(255, 111, 0, .7)), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
+    background: linear-gradient(rgba(255, 111, 0, .7),  rgba(255, 111, 0, .7)), url('https://farm5.staticflickr.com/4917/46829311261_61847a5848_o.jpg');
     background-position: center ;
     background-size: cover;
     color: #fff;
@@ -211,18 +211,18 @@
 }
 
 .how-much .price {
-    background: -webkit-linear-gradient(#1f3c88f0, #070d59f0);
-    background: -moz-linear-gradient(#1f3c88f0, #070d59f0);
-    background: linear-gradient(#1f3c88f0, #070d59f0);
+    background: -webkit-linear-gradient(rgba(31, 60, 136, .8), #070d59);
+    background: -moz-linear-gradient(rgba(31, 60, 136, .8), #070d59);
+    background: linear-gradient(rgba(31, 60, 136, .8), #070d59);
     text-align: center;
-    -webkit-transition: .6s all ease-out;
-    -moz-transition: .6s all ease-out;
-    transition: .6s all ease-out;
+    -webkit-transition: .8s all ease;
+    -moz-transition: .8s all ease;
+    transition: .8s all ease;
 }
 
 .how-much .price:hover {
     color:#FF6F00;
-    background: #fffffff0;
+    background: rgba(255, 255, 255, 0.9);
     border: rgba(0, 0, 0, 0.1) solid .4rem;
 }
 
@@ -282,6 +282,7 @@
     .how-much .price-text h2 {
         font-size: 3.8rem;
     }
+
 }
 
 @media (max-width: 767.9px) {
@@ -294,17 +295,22 @@
         font-size: 3rem;
     }
     
-    .content-texts {
+    .how-much .content-texts {
         margin-bottom: 1.4rem;
     }
 
-    .price {
+    .how-much .price {
         margin: auto 30%;
         padding: 1rem;    
         -webkit-box-border-radius: 1rem;
         -moz-box-border-radius: 1rem;
         border-radius: 1rem;
     }
+
+    .how-much .price:hover {
+        margin: auto calc(28% + -.4rem);
+    }
+
 }
 
 @media (max-width: 479.9px) {
@@ -319,9 +325,13 @@
         font-size: 2.4rem;
     }    
 
-    .price{
+    .how-much .price {
         margin: auto 12%;   
         padding: .8rem;    
+    }
+
+    .how-much .price:hover {
+        margin: auto calc(10% + -.4rem);
     }
 }
 
@@ -348,11 +358,16 @@
         padding-top: 100%;
     }
 
-    .price {
+    .how-much .price {
         -webkit-box-border-radius: 50%;
         -moz-box-border-radius: 50%;
         border-radius: 50%;
     }
+
+    .how-much .price:hover {
+        margin: -.4rem;
+    }
+
 
     .how-much .price-content {
         display: flex;
